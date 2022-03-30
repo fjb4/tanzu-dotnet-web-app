@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tanzu-dotnet-web-app
+  description: Tanzu .NET Web App
+  tags:
+    - app-accelerator
+    - dotnet
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-dotnet-web-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
